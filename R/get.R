@@ -1,46 +1,65 @@
-# get all characters pagination example
-resp <- httr::GET("https://rickandmortyapi.com/api/character",
-                  query = list("page" = 25))
+# Get all characters
+get_characters <- function() {
 
-# get all locations
-resp_loc <- httr::GET("https://rickandmortyapi.com/api/location")
+  # GET and parse first page of results
+  resp <- httr::GET("https://rickandmortyapi.com/api/character")
+  all_chars <- parse_resp(resp)
 
-# get all episodes
-resp_ep <- httr::GET("https://rickandmortyapi.com/api/episode")
+  # GET and parse all remaining pages, appending to all_chars tibble
+  while(httr::content(resp)$info$`next` != ""){
 
-# error checks and parsing to be passed to API call function
-if (httr::http_type(resp) != "application/json") {
-  stop("API did not return json", call. = FALSE)
+    resp <- httr::GET(paste(httr::content(resp)$info$`next`))
+
+    next_page <- parse_resp(resp)
+
+    all_chars <- rbind(all_chars, next_page)
+
+  }
+
+  return(all_chars)
+
 }
 
-if (httr::http_error(resp) == TRUE) {
-  warning("The request failed")
-} else {
-  parsed_content <- jsonlite::fromJSON(httr::content(resp,
-                                               as = "text",
-                                               encoding = "UTF-8"
-  ),
-  flatten = TRUE
-  )
+# Get all locations
+get_locations <- function() {
 
-  tibbled_content <- tibble::as_tibble(parsed_content$results)
+  # GET and parse first page of results
+  resp <- httr::GET("https://rickandmortyapi.com/api/location")
+  all_locs <- parse_resp(resp)
 
-  return(tibbled_content)
+  # GET and parse all remaining pages, appending to all_chars tibble
+  while(httr::content(resp)$info$`next` != ""){
+
+    resp <- httr::GET(paste(httr::content(resp)$info$`next`))
+
+    next_page <- parse_resp(resp)
+
+    all_locs <- rbind(all_locs, next_page)
+
+  }
+
+  return(all_locs)
+
 }
 
-# To return complete tibbles
-# ===========================
-# for pagination, can either: (1) pass content(resp)$info$`next` back into a
-# GET request and iterate through until content(resp)$info$`next`[1] == "" or
-# (2) create loop iterates over 1:content(resp)$info$pages making a GET request
-# with a different query = list("page" = 25) at each stage.
+# Get all episodes
+get_episodes <- function() {
 
-# To return single pages etc.
-# ============================
-# Should mortyr allow users to query all functionalities of the Rick and Morty
-# API? Given the small size of the data sets, does it not make more sense to
-# automate the process of iterating through all the pages and return one data
-# set for each endpoint. The exploration of data can take place in R using tools
-# such as dplyr?
+  # GET and parse first page of results
+  resp <- httr::GET("https://rickandmortyapi.com/api/episode")
+  all_eps <- parse_resp(resp)
 
-# Make note of rate limit
+  # GET and parse all remaining pages, appending to all_chars tibble
+  while(httr::content(resp)$info$`next` != ""){
+
+    resp <- httr::GET(paste(httr::content(resp)$info$`next`))
+
+    next_page <- parse_resp(resp)
+
+    all_eps <- rbind(all_eps, next_page)
+
+  }
+
+  return(all_eps)
+
+}

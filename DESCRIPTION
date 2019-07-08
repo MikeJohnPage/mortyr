@@ -9,3 +9,5 @@ URL: https://github.com/mikejohnpage/mortyr
 BugReports: https://github.com/mikejohnpage/mortyr/issues 
 Encoding: UTF-8
 LazyData: true
+Suggests: 
+    testthat
