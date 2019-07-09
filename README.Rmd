@@ -37,17 +37,17 @@ devtools::install_github("MikeJohnPage/mortyr")
 ```
 ## Usage
 
-<img src='man/figures/morty.png' align="left" height="20" /></a> _"aw geez, Rick, how do I use this package"_
+<img src='man/figures/morty.png' align="left" height="25" /></a> _"aw geez, Rick, how do I use this package"_
 
-<img src='man/figures/rick.png' align="left" height="25" /></a> _"It's simple Morty, you idiot. First, take the dinglebop, and then smooth it out with a bunch of schleem. Then, push it through the grumbo, making sure to cut out the fleeb. Make sure the blamfs rub against the chumbles and that the ploobis and grumbo are shaved away. Then you will be left with a regular old plumbus."_  
+<img src='man/figures/rick.png' align="left" height="30" /></a> _"It's simple Morty, you idiot. First, take the dinglebop, and then smooth it out with a bunch of schleem. Then, push it through the grumbo, making sure to cut out the fleeb. Make sure the blamfs rub against the chumbles and that the ploobis and grumbo are shaved away. Then you will be left with a regular old plumbus."_  
 
-<img src='man/figures/morty.png' align="left" height="20" /></a> _"I-I-I don't know Rick, are you sure about that?"_
+<img src='man/figures/morty.png' align="left" height="25" /></a> _"I-I-I don't know Rick, are you sure about that?"_
 
-<img src='man/figures/rick.png' align="left" height="25" /></a> _"Yes of course I'm certain Morty. That's the difference between you and me: I'm certain, and you're a walking burlap sack filled with turds."_
+<img src='man/figures/rick.png' align="left" height="30" /></a> _"Yes of course I'm certain Morty. That's the difference between you and me: I'm certain, and you're a walking burlap sack filled with turds."_
 
-<img src='man/figures/morty.png' align="left" height="20" /></a> _"So what you are saying is that R is such a great environment to wrangle data that the mortyr package abstracts away the API into just three functions: one that return all characters, one that returns all locations, and one that returns all episodes, from each respective API endpoint?"_
+<img src='man/figures/morty.png' align="left" height="25" /></a> _"So what you are saying is that R is such a great environment to wrangle data that the mortyr package abstracts away the API into just three functions: one that return all characters, one that returns all locations, and one that returns all episodes, from each respective API endpoint?"_
 
-<img src='man/figures/rick.png' align="left" height="25" /></a> _"Yes, obviously Morty. You're as dumb as they come. Why create overly-complicated R functions with a higher cognitive load when mortyr could do the hard work of returning all data from paginated API reponses. It is not like we are dealing with big data here Morty, R is clearly the better environment, so just import all the data in. Now flip off all these R users that think this package is pointless Morty. I told them it means peace among worlds. How hilarious is that?"_
+<img src='man/figures/rick.png' align="left" height="30" /></a> _"Yes, obviously Morty. You're as dumb as they come. Why create overly-complicated R functions with a higher cognitive load when mortyr could do the hard work of returning all data from paginated API reponses. It is not like we are dealing with big data here Morty, R is clearly the better environment, so just import all the data in. Now flip off all these R users that think this package is pointless Morty. I told them it means peace among worlds. How hilarious is that?"_
 
 ```{r}
 library(mortyr)
