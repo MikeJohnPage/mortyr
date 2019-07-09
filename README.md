@@ -58,10 +58,9 @@ endpoint?”*
 obviously Morty. You’re as dumb as they come. Why create
 overly-complicated R functions with a higher cognitive load when mortyr
 could do the hard work of returning and combining data from paginated
-API reponses? It is not like we are dealing with big data here Morty, R
-is clearly the better environment to explore the API data. Now flip off
-all these R users that think this package is pointless Morty. I told
-them it means peace among worlds. How hilarious is that?”*
+API reponses? It is not like we are dealing with big data here Morty.
+Now flip off all these R users that think this package is pointless
+Morty. I told them it means peace among worlds. How hilarious is that?”*
 
 ``` r
 library(mortyr)

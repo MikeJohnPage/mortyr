@@ -47,7 +47,7 @@ devtools::install_github("MikeJohnPage/mortyr")
 
 <img src='man/figures/morty.png' align="left" height="24" /></a> _"So what you are saying is that R is such a great environment to wrangle data that the mortyr package abstracts away the API into just three functions: one that returns all characters, one that returns all locations, and one that returns all episodes, from each respective API endpoint?"_
 
-<img src='man/figures/rick.png' align="left" height="30" /></a> _"Yes, obviously Morty. You're as dumb as they come. Why create overly-complicated R functions with a higher cognitive load when mortyr could do the hard work of returning and combining data from paginated API reponses? It is not like we are dealing with big data here Morty, R is clearly the better environment to explore the API data. Now flip off all these R users that think this package is pointless Morty. I told them it means peace among worlds. How hilarious is that?"_
+<img src='man/figures/rick.png' align="left" height="30" /></a> _"Yes, obviously Morty. You're as dumb as they come. Why create overly-complicated R functions with a higher cognitive load when mortyr could do the hard work of returning and combining data from paginated API reponses? It is not like we are dealing with big data here Morty. Now flip off all these R users that think this package is pointless Morty. I told them it means peace among worlds. How hilarious is that?"_
 
 ```{r}
 library(mortyr)
