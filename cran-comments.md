@@ -1,6 +1,6 @@
 ## Test environments
-* local Ubuntu 18.04.2 LTS install, R 3.6.0
-* Ubuntu 14.04 (on travis-ci), R 3.6.0
+* local Ubuntu 18.04.2 LTS install, R 3.6.1
+* Ubuntu 14.04 (on travis-ci), R 3.6.1
 * win-builder (devel and release)
 
 ## R CMD check results
