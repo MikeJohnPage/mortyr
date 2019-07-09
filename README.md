@@ -30,31 +30,31 @@ devtools::install_github("MikeJohnPage/mortyr")
 
 ## Usage
 
-<img src='man/figures/morty.png' align="left" height="20" /></a> *“Aw
+<img src='man/figures/morty.png' align="left" height="24" /></a> *“Aw
 geez, Rick, how do I use this package?”*
 
-<img src='man/figures/rick.png' align="left" height="25" /></a> *“It’s
+<img src='man/figures/rick.png' align="left" height="30" /></a> *“It’s
 simple Morty, you idiot. First, take the dinglebop, and then smooth it
 out with a bunch of schleem. Then, push it through the grumbo, making
 sure to cut out the fleeb. Make sure the blamfs rub against the chumbles
 and that the ploobis and grumbo are shaved away. Then you will be left
 with a regular old plumbus.”*
 
-<img src='man/figures/morty.png' align="left" height="20" /></a> *“I-I-I
+<img src='man/figures/morty.png' align="left" height="24" /></a> *“I-I-I
 don’t know Rick, are you sure about that?”*
 
-<img src='man/figures/rick.png' align="left" height="25" /></a> *“Yes of
+<img src='man/figures/rick.png' align="left" height="30" /></a> *“Yes of
 course I’m sure Morty. That’s the difference between you and me: I’m
 certain, and you’re a walking burlap sack filled with turds.”*
 
-<img src='man/figures/morty.png' align="left" height="20" /></a> *“So
+<img src='man/figures/morty.png' align="left" height="24" /></a> *“So
 what you are saying is that R is such a great environment to wrangle
 data that the mortyr package abstracts away the API into just three
 functions: one that returns all characters, one that returns all
 locations, and one that returns all episodes, from each respective API
 endpoint?”*
 
-<img src='man/figures/rick.png' align="left" height="25" /></a> *“Yes,
+<img src='man/figures/rick.png' align="left" height="30" /></a> *“Yes,
 obviously Morty. You’re as dumb as they come. Why create
 overly-complicated R functions with a higher cognitive load when mortyr
 could do the hard work of returning and combining data from paginated
@@ -102,11 +102,11 @@ get_episodes()
 
 ## Rate limit
 
-The Rick and Morty API is an open API, so no authentication is required
-for use. Nonetheless, to prevent malicious usage of the API there is a
-limit on the number of requests a given IP address can make. This limit
-is 10000 requests per day. If you happen to hit the limit you’ll receive
-a 429 status (Too Many Requests) on all your requests during a period of
+The Rick and Morty API is an open API, no authentication is required for
+use. Nonetheless, to prevent malicious usage of the API there is a limit
+on the number of requests a given IP address can make. This limit is
+10000 requests per day. If you happen to hit the limit you’ll receive a
+429 status (Too Many Requests) on all your requests during a period of
 12 hours.
 
 ## Getting help
