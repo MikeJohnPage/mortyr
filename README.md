@@ -30,9 +30,43 @@ devtools::install_github("MikeJohnPage/mortyr")
 
 ## Usage
 
-``` r
+<img src='man/figures/morty.png' align="left" height="20" /></a> *“aw
+geez, Rick, how do I use this package”*
 
-mortyr::get_characters()
+<img src='man/figures/rick.png' align="left" height="25" /></a> *“It’s
+simple Morty, you idiot. First, take the dinglebop, and then smooth it
+out with a bunch of schleem. Then, push it through the grumbo, making
+sure to cut out the fleeb. Make sure the blamfs rub against the chumbles
+and that the ploobis and grumbo are shaved away. Then you will be left
+with a regular old plumbus.”*
+
+<img src='man/figures/morty.png' align="left" height="20" /></a> *“I-I-I
+don’t know Rick, are you sure about that?”*
+
+<img src='man/figures/rick.png' align="left" height="25" /></a> *“Yes of
+course I’m certain Morty. That’s the difference between you and me: I’m
+certain, and you’re a walking burlap sack filled with turds.”*
+
+<img src='man/figures/morty.png' align="left" height="20" /></a> *“So
+what you are saying is that R is such a great environment to wrangle
+data that the mortyr package abstracts away the API into just three
+functions: one that return all characters, one that returns all
+locations, and one that returns all episodes, from each respective API
+endpoint?”*
+
+<img src='man/figures/rick.png' align="left" height="25" /></a> *“Yes,
+obviously Morty. You’re as dumb as they come. Why create
+overly-complicated R functions with a higher cognitive load when mortyr
+could do the hard work of returning all data from paginated API
+reponses. It is not like we are dealing with big data here Morty, R is
+clearly the better environment, so just import all the data in. Now flip
+off all these R users that think this package is pointless Morty. I told
+them it means peace among worlds. How hilarious is that?”*
+
+``` r
+library(mortyr)
+
+get_characters()
 #> # A tibble: 493 x 14
 #>      id name  status species type  gender image episode url   created
 #>   <int> <chr> <chr>  <chr>   <chr> <chr>  <chr> <list>  <chr> <chr>  
@@ -42,6 +76,28 @@ mortyr::get_characters()
 #> 4     4 Beth… Alive  Human   ""    Female http… <chr [… http… 2017-1…
 #> 5     5 Jerr… Alive  Human   ""    Male   http… <chr [… http… 2017-1…
 #> # … with 488 more rows, and 4 more variables
+
+get_locations()
+#> # A tibble: 76 x 7
+#>      id name      type     dimension  residents url             created    
+#>   <int> <chr>     <chr>    <chr>      <list>    <chr>           <chr>      
+#> 1     1 Earth (C… Planet   Dimension… <chr [27… https://rickan… 2017-11-10…
+#> 2     2 Abadango  Cluster  unknown    <chr [1]> https://rickan… 2017-11-10…
+#> 3     3 Citadel … Space s… unknown    <chr [91… https://rickan… 2017-11-10…
+#> 4     4 Worldend… Planet   unknown    <chr [9]> https://rickan… 2017-11-10…
+#> 5     5 Anatomy … Microve… Dimension… <chr [11… https://rickan… 2017-11-10…
+#> # … with 71 more rows
+
+get_episodes()
+#> # A tibble: 31 x 7
+#>      id name       air_date   episode characters url            created    
+#>   <int> <chr>      <chr>      <chr>   <list>     <chr>          <chr>      
+#> 1     1 Pilot      December … S01E01  <chr [19]> https://ricka… 2017-11-10…
+#> 2     2 Lawnmower… December … S01E02  <chr [19]> https://ricka… 2017-11-10…
+#> 3     3 Anatomy P… December … S01E03  <chr [24]> https://ricka… 2017-11-10…
+#> 4     4 M. Night … January 1… S01E04  <chr [13]> https://ricka… 2017-11-10…
+#> 5     5 Meeseeks … January 2… S01E05  <chr [20]> https://ricka… 2017-11-10…
+#> # … with 26 more rows
 ```
 
 ## Rate limit
