@@ -102,11 +102,11 @@ get_episodes()
 
 ## Rate limit
 
-The Rick and Morty API is an open API, no authentication is required for
-use. Nonetheless, to prevent malicious usage of the API there is a limit
-on the number of requests a given IP address can make. This limit is
-10000 requests per day. If you happen to hit the limit you’ll receive a
-429 status (Too Many Requests) on all your requests during a period of
+The Rick and Morty API is an open API, so no authentication is required
+for use. Nonetheless, to prevent malicious usage of the API there is a
+limit on the number of requests a given IP address can make. This limit
+is 10000 requests per day. If you happen to hit the limit you’ll receive
+a 429 status (Too Many Requests) on all your requests during a period of
 12 hours.
 
 ## Getting help
