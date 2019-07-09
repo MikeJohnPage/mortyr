@@ -21,7 +21,13 @@ characters, locations, and episodes from the show.
 
 ## Installation
 
-You can install the development version from GitHub with:
+You can install the released version of mortyr from CRAN:
+
+``` r
+install.packages("mortyr")
+```
+
+Or install the development version from GitHub with:
 
 ``` r
 # install.packages("devtools")
@@ -111,4 +117,8 @@ on the number of requests a given IP address can make. This limit is
 ## Getting help
 
 If you encounter a clear bug, please file a minimal reproducible example
-in [issues](https://github.com/MikeJohnPage/mortyr/issues).
+in
+[issues](https://github.com/MikeJohnPage/mortyr/issues).
+
+<img src='man/figures/show-me-what-you-got.png' align="left" height="27" /></a>
+*“SHOW ME WHAT YOU GOT.”*
