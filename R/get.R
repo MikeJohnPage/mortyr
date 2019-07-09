@@ -1,3 +1,33 @@
+#' Get characters
+#'
+#' \code{get_characters} returns a tibble of all the characters from the
+#' `character` endpoint of
+#' \href{https://rickandmortyapi.com/documentation/#character}{The Rick and Morty API}.
+#' This information includes:
+#' \itemize{
+#'   \item id
+#'   \item name
+#'   \item status
+#'   \item species
+#'   \item type
+#'   \item gender
+#'   \item image
+#'   \item episode
+#'   \item url
+#'   \item created
+#'   \item origin.name
+#'   \item origin.url
+#'   \item location.name
+#'   \item location.url
+#' }
+#'
+#' @examples
+#' \dontrun{
+#' get_characters()
+#' }
+#'
+#' @export
+
 # Get all characters
 get_characters <- function() {
 
@@ -20,6 +50,29 @@ get_characters <- function() {
 
 }
 
+#' Get locations
+#'
+#' \code{get_locations} returns a tibble of all the locations from the
+#' `location` endpoint of
+#' \href{https://rickandmortyapi.com/documentation/#location}{The Rick and Morty API}.
+#' This information includes:
+#' \itemize{
+#'   \item id
+#'   \item name
+#'   \item type
+#'   \item dimension
+#'   \item residents
+#'   \item url
+#'   \item created
+#' }
+#'
+#' @examples
+#' \dontrun{
+#' get_locations()
+#' }
+#'
+#' @export
+
 # Get all locations
 get_locations <- function() {
 
@@ -41,6 +94,29 @@ get_locations <- function() {
   return(all_locs)
 
 }
+
+#' Get episodes
+#'
+#' \code{get_episodes} returns a tibble of all the episodes from the
+#' `episode` endpoint of
+#' \href{https://rickandmortyapi.com/documentation/#episode}{The Rick and Morty API}.
+#' This information includes:
+#' \itemize{
+#'   \item id
+#'   \item name
+#'   \item air_date
+#'   \item episode
+#'   \item characters
+#'   \item url
+#'   \item created
+#' }
+#'
+#' @examples
+#' \dontrun{
+#' get_episodes()
+#' }
+#'
+#' @export
 
 # Get all episodes
 get_episodes <- function() {
