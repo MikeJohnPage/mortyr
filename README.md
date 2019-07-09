@@ -16,7 +16,7 @@ status](https://travis-ci.org/MikeJohnPage/mortyr.svg?branch=master)](https://tr
 
 mortyr is an R wrapper to the [The Rick and Morty
 API](https://rickandmortyapi.com/) and the most rickdiculous package in
-the R-verse. Use it to return information about your favourite
+the R-verse. Use it to return information about your favorite
 characters, locations, and episodes from the show.
 
 ## Installation
@@ -58,7 +58,7 @@ endpoint?”*
 obviously Morty. You’re as dumb as they come. Why create
 overly-complicated R functions with a higher cognitive load when mortyr
 could do the hard work of returning and combining data from paginated
-API reponses? It is not like we are dealing with big data here Morty.
+API responses? It is not like we are dealing with big data here Morty.
 Now flip off all these R users that think this package is pointless
 Morty. I told them it means peace among worlds. How hilarious is that?”*
 
