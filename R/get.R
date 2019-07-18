@@ -22,7 +22,7 @@
 #' }
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_characters()
 #' }
 #'
@@ -67,7 +67,7 @@ get_characters <- function() {
 #' }
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_locations()
 #' }
 #'
@@ -112,7 +112,7 @@ get_locations <- function() {
 #' }
 #'
 #' @examples
-#' \dontrun{
+#' \donttest{
 #' get_episodes()
 #' }
 #'

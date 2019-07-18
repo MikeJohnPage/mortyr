@@ -22,7 +22,7 @@ This information includes:
 }
 }
 \examples{
-\dontrun{
+\donttest{
 get_locations()
 }
 

@@ -1,10 +1,10 @@
 Package: mortyr
-Title: R Wrapper to the Rick and Morty API
+Title: Wrapper to 'The Rick and Morty' API
 Version: 0.0.1
 Authors@R: person("Michael", "Page", email = "hello@mikejohnpage.com",
     role = c("aut", "cre"))
-Description: R wrapper to the Rick and Morty API to return information about 
-    characters, locations, and episodes from the show.
+Description: Returns information about characters, locations, and episodes from
+    'The Rick and Morty' API: <https://rickandmortyapi.com>.
 License: MIT + file LICENSE
 URL: https://github.com/mikejohnpage/mortyr
 BugReports: https://github.com/mikejohnpage/mortyr/issues 
@@ -13,7 +13,7 @@ LazyData: true
 Imports: 
     httr,
     jsonlite,
-    tibble,
+    tibble
 Suggests: 
     testthat
 RoxygenNote: 6.1.1
