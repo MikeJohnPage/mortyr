@@ -1,4 +1,11 @@
+## Resubmission 2
+
+This is a resubmission. In this version I have:
+
+* Removed the quote around the word API in the Title and Description. 
+
 ## Resubmission
+
 This is a resubmission. In this version I have:
 
 * Omitted the redundant "R" from the title.  
