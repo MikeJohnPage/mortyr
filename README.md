@@ -16,7 +16,7 @@ status](https://travis-ci.org/MikeJohnPage/mortyr.svg?branch=master)](https://tr
 
 mortyr is an R wrapper to the [The Rick and Morty
 API](https://rickandmortyapi.com/) and the most rickdiculous package in
-the R-verse. Use it to return information about your favorite
+the R-verse. Use it to return information about your favourite
 characters, locations, and episodes from the show.
 
 ## Installation

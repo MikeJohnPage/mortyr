@@ -25,7 +25,7 @@ options(tibble.print_min = 5, tibble.print_max = 5, tibble.max_extra_cols = 0)
 
 mortyr is an R wrapper to the [The Rick and Morty API](https://rickandmortyapi.com/)
 and the most rickdiculous package in the R-verse. Use it to return information
-about your favorite characters, locations, and episodes from the show.
+about your favourite characters, locations, and episodes from the show.
 
 ## Installation
 
