@@ -36,7 +36,7 @@ get_characters <- function() {
   all_chars <- parse_resp(resp)
 
   # GET and parse all remaining pages, appending to all_chars tibble
-  while(httr::content(resp)$info$`next` != ""){
+  while(!is.null(httr::content(resp)$info$`next`)){
 
     resp <- httr::GET(paste(httr::content(resp)$info$`next`))
 
@@ -81,7 +81,7 @@ get_locations <- function() {
   all_locs <- parse_resp(resp)
 
   # GET and parse all remaining pages, appending to all_chars tibble
-  while(httr::content(resp)$info$`next` != ""){
+  while(!is.null(httr::content(resp)$info$`next`)){
 
     resp <- httr::GET(paste(httr::content(resp)$info$`next`))
 
@@ -126,7 +126,7 @@ get_episodes <- function() {
   all_eps <- parse_resp(resp)
 
   # GET and parse all remaining pages, appending to all_chars tibble
-  while(httr::content(resp)$info$`next` != ""){
+  while(!is.null(httr::content(resp)$info$`next`)){
 
     resp <- httr::GET(paste(httr::content(resp)$info$`next`))
 
