@@ -22,7 +22,7 @@ This information includes:
 }
 }
 \examples{
-\donttest{
+\dontrun{
 get_episodes()
 }
 
