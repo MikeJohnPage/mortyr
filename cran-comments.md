@@ -1,10 +1,10 @@
 ## Submission
-This package was previously removed from CRAN. This is because I did not fix a
-bug in time with the CRAN policies. The bug was causing all of the `get_*()`
-functions in this package to return an error when calling 'The Rick and Morty'
-API. In this release I have:
+This package was previously archived on 2020-05-25 for policy violation. This
+policy violation was 'On Internet access'. In this release I have:
 
-* Fixed the bug causing the API responses to fail.
+* Remedied the policy violation by fixing a bug that was causing all of the
+`get_*()` functions in this package to return an error when calling 'The Rick
+and Morty' API.
 
 ## Test environments
 * local macOS 10.16, R 4.0.3
