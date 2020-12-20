@@ -1,6 +1,6 @@
 Package: mortyr
 Title: Wrapper to 'The Rick and Morty' API
-Version: 0.0.1.9000
+Version: 0.0.2
 Authors@R: person("Michael", "Page", email = "hello@mikejohnpage.com",
     role = c("aut", "cre"))
 Description: Returns information about characters, locations, and episodes from
