@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# mortyr <img src='man/figures/logo.png' align="right" height="200" /></a>
+# mortyr <img src='man/figures/logo.png' align="right" height="175" /></a>
 
 <!-- badges: start -->
 
