@@ -36,18 +36,15 @@ get_characters <- function() {
   all_chars <- parse_resp(resp)
 
   # GET and parse all remaining pages, appending to all_chars tibble
-  while(!is.null(httr::content(resp)$info$`next`)){
-
+  while (!is.null(httr::content(resp)$info$`next`)) {
     resp <- httr::GET(paste(httr::content(resp)$info$`next`))
 
     next_page <- parse_resp(resp)
 
     all_chars <- rbind(all_chars, next_page)
-
   }
 
   return(all_chars)
-
 }
 
 #' Get locations
@@ -81,18 +78,15 @@ get_locations <- function() {
   all_locs <- parse_resp(resp)
 
   # GET and parse all remaining pages, appending to all_chars tibble
-  while(!is.null(httr::content(resp)$info$`next`)){
-
+  while (!is.null(httr::content(resp)$info$`next`)) {
     resp <- httr::GET(paste(httr::content(resp)$info$`next`))
 
     next_page <- parse_resp(resp)
 
     all_locs <- rbind(all_locs, next_page)
-
   }
 
   return(all_locs)
-
 }
 
 #' Get episodes
@@ -126,16 +120,13 @@ get_episodes <- function() {
   all_eps <- parse_resp(resp)
 
   # GET and parse all remaining pages, appending to all_chars tibble
-  while(!is.null(httr::content(resp)$info$`next`)){
-
+  while (!is.null(httr::content(resp)$info$`next`)) {
     resp <- httr::GET(paste(httr::content(resp)$info$`next`))
 
     next_page <- parse_resp(resp)
 
     all_eps <- rbind(all_eps, next_page)
-
   }
 
   return(all_eps)
-
 }
