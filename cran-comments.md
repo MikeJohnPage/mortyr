@@ -4,7 +4,7 @@ This is a resubmission. In this version I have:
 * Fixed the README badge links by changing them to https and adding trailing
 slashes as requested.
 
-## Original submission
+## Submission
 This package was previously archived on 2020-05-25 for policy violation. This
 policy violation was 'On Internet access'. In this release I have:
 
