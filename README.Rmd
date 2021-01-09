@@ -17,8 +17,8 @@ options(tibble.print_min = 5, tibble.print_max = 5, tibble.max_extra_cols = 0)
 # mortyr <img src='man/figures/logo.png' align="right" height="150" /></a>
 
 <!-- badges: start -->
-[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
-[![Travis build status](https://travis-ci.org/MikeJohnPage/mortyr.svg?branch=master)](https://travis-ci.org/MikeJohnPage/mortyr)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active/)
+[![Travis build status](https://travis-ci.org/MikeJohnPage/mortyr.svg?branch=master)](https://travis-ci.org/MikeJohnPage/mortyr/)
 <!-- badges: end -->
 
 ## Overview
